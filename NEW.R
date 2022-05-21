@@ -48,6 +48,7 @@ my_data$LC <- as.integer(my_data$LC)
 #str()函数查看数据的基本情况
 
 #dput(names(lalonde))
+#请注意在tableone函数中还要定义各数据的类型。
 preBL <- CreateTableOne(vars=c("TREAT","LC","altitude","slope","Rainfall","temperature"),
                         strata="TREAT",
                         factorVars=c("TREAT","LC"),
